@@ -6,11 +6,11 @@
 /*   By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 19:43:22 by yabukirento       #+#    #+#             */
-/*   Updated: 2025/05/01 19:49:27 by yabukirento      ###   ########.fr       */
+/*   Updated: 2025/05/01 20:17:27 by yabukirento      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "../includes/Zombie.hpp"
 
 int	main(void)
 {
