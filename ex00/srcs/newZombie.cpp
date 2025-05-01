@@ -1,15 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
+/*   newZombie.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/01 16:38:33 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/01 17:28:01 by ryabuki          ###   ########.fr       */
+/*   Created: 2025/05/01 19:27:26 by yabukirento       #+#    #+#             */
+/*   Updated: 2025/05/01 19:34:57 by yabukirento      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie* zombieHorde( int N, std::string name );
+Zombie* newZombie( std::string name )
+{
+	return new Zombie(name);
+}

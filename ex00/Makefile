@@ -3,20 +3,21 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+         #
+#    By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/05/01 15:12:48 by ryabuki           #+#    #+#              #
-#    Updated: 2025/05/01 16:41:17 by ryabuki          ###   ########.fr        #
+#    Created: 2025/05/01 19:21:50 by yabukirento       #+#    #+#              #
+#    Updated: 2025/05/01 19:21:52 by yabukirento      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = phonebook
+NAME = BraiiiiiiinnnzzzZ
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 INCLUDES = -I includes
 
-SRCS = srcs/Zombie.cpp \
-		srcs/zombieHorde.cpp \
+SRCS =	srcs/Zombie.cpp \
+		srcs/newZombie.cpp \
+		srcs/randomChump.cpp \
 		srcs/main.cpp
 
 OBJS = $(SRCS:.cpp=.o)
