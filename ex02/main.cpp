@@ -6,11 +6,11 @@
 /*   By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 20:32:09 by yabukirento       #+#    #+#             */
-/*   Updated: 2025/05/01 20:40:06 by yabukirento      ###   ########.fr       */
+/*   Updated: 2025/05/01 21:30:37 by yabukirento      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include <string>
 #include <iostream>
 
 int	main()

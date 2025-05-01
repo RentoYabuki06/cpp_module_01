@@ -6,13 +6,13 @@
 #    By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/01 20:30:07 by yabukirento       #+#    #+#              #
-#    Updated: 2025/05/01 20:37:56 by yabukirento      ###   ########.fr        #
+#    Updated: 2025/05/01 21:30:26 by yabukirento      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = HI_THIS_IS_BRAIN
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
 
 SRCS = main.cpp
 
