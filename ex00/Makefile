@@ -6,13 +6,13 @@
 #    By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/01 19:21:50 by yabukirento       #+#    #+#              #
-#    Updated: 2025/05/01 19:21:52 by yabukirento      ###   ########.fr        #
+#    Updated: 2025/05/01 21:33:33 by yabukirento      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = BraiiiiiiinnnzzzZ
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
 INCLUDES = -I includes
 
 SRCS =	srcs/Zombie.cpp \
