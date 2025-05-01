@@ -6,13 +6,13 @@
 #    By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/01 20:44:19 by yabukirento       #+#    #+#              #
-#    Updated: 2025/05/01 20:45:08 by yabukirento      ###   ########.fr        #
+#    Updated: 2025/05/01 21:28:39 by yabukirento      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = UnnecessaryViolence
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
 INCLUDES = -I includes
 
 SRCS = 	srcs/main.cpp \
