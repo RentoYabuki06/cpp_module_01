@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+        */
+/*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 16:38:28 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/01 21:32:23 by yabukirento      ###   ########.fr       */
+/*   Updated: 2025/05/04 09:55:37 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@ int main(void)
 		std::cout << "Index [" << i << "] ";
 		horde[i].announce();
 	}
-	delete horde;
+	delete[] horde;
 	return 0;
 }

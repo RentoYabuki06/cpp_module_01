@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+        */
+/*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 21:39:47 by yabukirento       #+#    #+#             */
-/*   Updated: 2025/05/01 22:21:35 by yabukirento      ###   ########.fr       */
+/*   Updated: 2025/05/04 10:04:13 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ std::string	replaceString(const std::string& content, const std::string& s1, con
 
 int exitWithError(const std::string& msg) {
     std::cerr << "Error: " << msg << std::endl;
-    return EXIT_FAILURE;
+    return 1;
 }
 
 int main(int argc, char const *argv[])
@@ -53,7 +53,7 @@ int main(int argc, char const *argv[])
 	if (s1.empty())
 		return exitWithError("s1 (search string) must not be empty");
 
-	std::ifstream infile(filename);
+	std::ifstream infile(filename.c_str());
 	if (!infile)
 		return exitWithError(std::string("cannot open file ") + filename);
 
@@ -63,7 +63,7 @@ int main(int argc, char const *argv[])
 
 	std::string replaced = replaceString(buf.str(), s1, s2);
 
-	std::ofstream outfile(filename + ".replace");
+	std::ofstream outfile((filename + ".replace").c_str());
 	if (!outfile)
 		return exitWithError("cannot create new replaced file");
 
@@ -71,5 +71,5 @@ int main(int argc, char const *argv[])
 	outfile.close();
 
 	std::cout << "Replaced content written to " << filename + ".replace" << std::endl;
-	return EXIT_SUCCESS;
+	return 0;
 }

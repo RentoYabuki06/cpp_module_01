@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+        */
+/*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 22:25:19 by yabukirento       #+#    #+#             */
-/*   Updated: 2025/05/03 21:53:10 by yabukirento      ###   ########.fr       */
+/*   Updated: 2025/05/04 10:09:27 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ int main(int argc, char **argv)
 			<< "Usage			: ./Harl3 <level>\n"
 			<< "Available levels	: DEBUG, INFO, WARNING, ERROR\n"
 			<< "Example			: ./Harl3 WARNING" << std::endl;
-		return (EXIT_FAILURE);
+		return (1);
 	}
 	harl.complain(argv[1]);
-	return (EXIT_SUCCESS);;
+	return (0);
 }
