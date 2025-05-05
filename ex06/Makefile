@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+         #
+#    By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/01 22:23:58 by yabukirento       #+#    #+#              #
-#    Updated: 2025/05/03 21:53:40 by yabukirento      ###   ########.fr        #
+#    Updated: 2025/05/05 13:26:47 by ryabuki          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Harl3
+NAME = harlFilter
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
 INCLUDES = -I includes
