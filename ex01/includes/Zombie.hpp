@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+        */
+/*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 19:53:43 by yabukirento       #+#    #+#             */
-/*   Updated: 2025/05/01 20:48:17 by yabukirento      ###   ########.fr       */
+/*   Updated: 2025/05/05 12:58:25 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,9 @@ public:
 	Zombie();
 	Zombie(std::string name);
 	~Zombie();
-	void	announce(void);
-	void	setName(std::string name);
+	void				announce(void);
+	void				setName(std::string name);
+	const std::string&	getName() const;
 };
 
 Zombie* zombieHorde( int N, std::string name );
