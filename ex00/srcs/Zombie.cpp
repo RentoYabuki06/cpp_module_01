@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+        */
+/*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 16:38:30 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/01 21:33:36 by yabukirento      ###   ########.fr       */
+/*   Updated: 2025/05/05 12:57:04 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,20 @@
 
 Zombie::Zombie(std::string name) : name(name) 
 {
-	std::cout << "Zombie created on the stack!" << std::endl;
+	std::cout << "Zombie [" << this->getName() << "] created!" << std::endl;
 }
 
 Zombie::~Zombie()
 {
-	std::cout << "Zombie destroyed on the stack!" << std::endl;
+	std::cout << "Zombie [" << this->getName() << "] destroyed!" << std::endl;
 }
 
 void	Zombie::announce()
 {
-	std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout  << this->getName() << ": BraiiiiiiinnnzzzZ..." << std::endl;
+}
+
+const std::string& Zombie::getName() const
+{
+	return this->name;
 }

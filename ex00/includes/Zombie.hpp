@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+        */
+/*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 16:38:35 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/01 20:48:06 by yabukirento      ###   ########.fr       */
+/*   Updated: 2025/05/05 12:53:26 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,12 @@ private:
 public:
 	Zombie(std::string name);
 	~Zombie();
-	void	announce(void);
+	void				announce(void);
+	const std::string&	getName() const;
 };
 
-Zombie* newZombie( std::string name );
-void randomChump( std::string name );
+Zombie*	newZombie( std::string name );
+void	randomChump( std::string name );
 
 #endif
 
