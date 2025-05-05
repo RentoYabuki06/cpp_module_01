@@ -6,7 +6,7 @@
 /*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 21:39:47 by yabukirento       #+#    #+#             */
-/*   Updated: 2025/05/04 10:04:13 by ryabuki          ###   ########.fr       */
+/*   Updated: 2025/05/05 13:24:17 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,3 +73,6 @@ int main(int argc, char const *argv[])
 	std::cout << "Replaced content written to " << filename + ".replace" << std::endl;
 	return 0;
 }
+
+// Let's test like below!
+// echo "hello world" > test.txt ; ./SedIsForLosers test.txt l XX
