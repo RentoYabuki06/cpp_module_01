@@ -12,6 +12,7 @@ Each exercise focuses on specific C++ concepts:
 - **ex03: UnnecessaryViolence** - Classes with references vs pointers
 - **ex04: SedIsForLosers** - File handling and string manipulation
 - **ex05: Harl** - Member function pointers and callback mechanisms
+- **ex06: harlFilter** - Switch statement and complaint filtering system
 
 ## Requirements
 
@@ -50,8 +51,8 @@ make re
 ### ex00: BraiiiiiiinnnzzzZ
 
 Basic zombie class with memory allocation demonstrations:
-- [`newZombie()`](ex00/srcs/newZombie.cpp ): Creates a zombie on the heap
-- [`randomChump()`](ex00/srcs/randomChump.cpp ): Creates a zombie on the stack
+- `newZombie()`: Creates a zombie on the heap
+- `randomChump()`: Creates a zombie on the stack
 
 ```bash
 ./BraiiiiiiinnnzzzZ
@@ -76,8 +77,8 @@ Demonstrates the difference between pointers and references:
 ### ex03: UnnecessaryViolence
 
 Shows different ways of associating classes:
-- [`HumanA`](ex03/includes/HumanA.hpp ): Always has a weapon (reference)
-- [`HumanB`](ex03/includes/HumanB.hpp ): Might not have a weapon initially (pointer)
+- `HumanA`: Always has a weapon (reference)
+- `HumanB`: Might not have a weapon initially (pointer)
 
 ```bash
 ./UnnecessaryViolence
@@ -97,6 +98,18 @@ Demonstrates member function pointers with a complaint system:
 
 ```bash
 ./Harl2
+```
+
+### ex06: harlFilter
+
+Extends the Harl program with a complaint filter system using switch statements:
+- Takes a filter level as command-line argument
+- Displays complaints from that level and all higher levels
+- Uses switch statement fall-through behavior for cascading messages
+
+```bash
+./harlFilter <level>
+# Available levels: DEBUG, INFO, WARNING, ERROR
 ```
 
 ## Code Style
